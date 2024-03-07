@@ -32,7 +32,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 /* About Image Wrapper */
@@ -161,7 +160,7 @@ footer {
   padding: 1rem;
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .contact-details {
@@ -196,4 +195,37 @@ footer {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+@media screen and (max-width: 480px) {
+  /* Header */
+  header {
+    background: linear-gradient(320deg, var(--white) 65%, var(--blue) 65%);
+    margin-bottom: 0;
+  }
+
+  .header-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100dvw;
+  }
+
+  /* About Image Wrapper */
+  .about-image-wrapper {
+    width: 100%;
+  }
+
+  /* About Me Wrapper */
+  .about-me-wrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    max-width: 100%;
+    box-shadow: none;
+  }
+
+  /* Social Icons */
+  .social-icons {
+    align-self: center;
+  }
 }
