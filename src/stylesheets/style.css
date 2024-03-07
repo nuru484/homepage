@@ -236,3 +236,25 @@ a {
     text-align: center;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .header-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100dvw;
+  }
+
+  /* About Image Wrapper */
+  .about-image-wrapper {
+    width: 100%;
+  }
+
+  /* About Me Wrapper */
+  .about-me-wrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    max-width: 100%;
+    box-shadow: none;
+  }
+}
