@@ -228,4 +228,11 @@ a {
   .social-icons {
     align-self: center;
   }
+  .contact-details h3 {
+    align-self: center;
+  }
+
+  .footer-social-icons {
+    text-align: center;
+  }
 }
